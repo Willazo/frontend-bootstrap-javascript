@@ -1,0 +1,432 @@
+<!DOCTYPE html> <!-- puede estar en minúscula y en mayúscula -->
+<html lang="es"> <!-- ponemos que nuestro documento estará en español, solo puedo tener un idioma -->
+<!-- si queremos varios idiomas debemos dividirlos en dominios o subdominios, NUNCA en subcarpetas -->
+<!-- porque google indexa sitios por idiomas por dominios o subdominios, mejor comprar un dominio por idioma -->
+<head>
+<meta charset="utf-8" /> <!-- slash de cierre, es buena práctica el colocarlos -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Aplicación Front-End: Red social</title>
+<!-- no necesitamos normalize y añadimos el bootstrap -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="appsocial.css" /> <!-- el type="text/css" podría ponerse pero por defecto solo existe un estilo de css, por lo que es redundante ponerlo, buena práctica -->
+</head>
+<body><!-- lo principal es usar las etiquetas semánticas, header, footer, section, articles...etc -->
+<!-- los div son divisiones, es decir, si en una cabecera tenemos un titulo, una imagen, un boton y algún otro elemento, esos espacios arriba o abajo, derecha o izquierda, son divisiones visuales, ahí se utilizan los div -->
+<header class="row">
+	<div class="logo col-xs-1">
+		<figure>
+			
+		</figure>
+	</div>
+	<div class="titular col-xs-10">
+		<h1 class="titulo">
+			Appsocial: Aplicación de comunicación
+		</h1>
+		<div>
+			<a class="filtro" href="#">
+				Responsive Design
+			</a>
+			<a class="publicar pull-right btn btn-default" href="#">
+				Publicar
+			</a>
+		</div>
+	</div>
+	<div class="usuario col-xs-1">
+		<figure class="avatar">
+			
+		</figure>
+		<a class="flecha" href="#">
+			
+		</a>
+	</div>
+</header>
+<nav id="navigation">
+	<ul class="menu nav nav-pills">
+		<li><a href="#">Python</a></li>
+		<li><a href="#">HTML5</a></li>
+		<li><a href="#">Javascript</a></li>
+		<li><a href="#">Django</a></li>
+		<li><a href="#">CSS3</a></li>
+		<li><a href="#">Python</a></li>
+		<li><a href="#">HTML5</a></li>
+		<li><a href="#">Javascript</a></li>
+		<li><a href="#">Django</a></li>
+		<li><a href="#">CSS3</a></li>
+	</ul>
+</nav>
+<!-- en la gran mayoria de diseños web no es necesario un "container" solo en los que se necesite establecer un ancho de página y se quede fijo una vez llegado a ese ancho -->
+<section class="posts row">
+<div class="col-sm-6">
+	<article class="post">
+		<div class="descripcion row">
+			<figure class="imagen col-xs-3">
+				
+			</figure>
+			<div class="detalles col-xs-9">
+				<h2 class="titulo">
+					Buenas prácticas para el uso de Git y GitHub
+				</h2>
+				<p class="autor">
+					por <a href="#">Alfredo López</a>
+				</p>
+				<a class="tag btn btn-default" href="#">CSS3</a>
+				<p class="fecha pull-right">hace <strong>20</strong> min</p>
+			</div>
+		</div>
+		<div class="acciones">
+			<div class="votos">
+				<a class="up" href="#"></a>
+				<span class="total pull-left">156</span>
+				<a class="down" href="#"></a>
+			</div>
+			<div class="datos">
+				<a class="comentarios pull-right btn btn-primary" href="#">
+					10
+				</a>
+				<a class="estrella" href="#">
+					*
+				</a>
+			</div>
+		</div>
+	</article>
+</div>
+<div class="col-sm-6">
+	<article class="post">
+		<div class="descripcion row">
+			<figure class="imagen col-xs-3">
+				
+			</figure>
+			<div class="detalles col-xs-9">
+				<h2 class="titulo">
+					Buenas prácticas para el uso de Git y GitHub
+				</h2>
+				<p class="autor">
+					por <a href="#">Alfredo López</a>
+				</p>
+				<a class="tag btn btn-default" href="#">CSS3</a>
+				<p class="fecha pull-right">hace <strong>20</strong> min</p>
+			</div>
+		</div>
+		<div class="acciones">
+			<div class="votos">
+				<a class="up" href="#"></a>
+				<span class="total pull-left">156</span>
+				<a class="down" href="#"></a>
+			</div>
+			<div class="datos">
+				<a class="comentarios pull-right btn btn-primary" href="#">
+					10
+				</a>
+				<a class="estrella" href="#">
+					*
+				</a>
+			</div>
+		</div>
+	</article>
+</div>
+<div class="col-sm-6">
+	<article class="post">
+		<div class="descripcion row">
+			<figure class="imagen col-xs-3">
+				
+			</figure>
+			<div class="detalles col-xs-9">
+				<h2 class="titulo">
+					Buenas prácticas para el uso de Git y GitHub
+				</h2>
+				<p class="autor">
+					por <a href="#">Alfredo López</a>
+				</p>
+				<a class="tag btn btn-default" href="#">CSS3</a>
+				<p class="fecha pull-right">hace <strong>20</strong> min</p>
+			</div>
+		</div>
+		<div class="acciones">
+			<div class="votos">
+				<a class="up" href="#"></a>
+				<span class="total pull-left">156</span>
+				<a class="down" href="#"></a>
+			</div>
+			<div class="datos">
+				<a class="comentarios pull-right btn btn-primary" href="#">
+					10
+				</a>
+				<a class="estrella" href="#">
+					*
+				</a>
+			</div>
+		</div>
+	</article>
+</div>
+<div class="col-sm-6">
+	<article class="post">
+		<div class="descripcion row">
+			<figure class="imagen col-xs-3">
+				
+			</figure>
+			<div class="detalles col-xs-9">
+				<h2 class="titulo">
+					Buenas prácticas para el uso de Git y GitHub
+				</h2>
+				<p class="autor">
+					por <a href="#">Alfredo López</a>
+				</p>
+				<a class="tag btn btn-default" href="#">CSS3</a>
+				<p class="fecha pull-right">hace <strong>20</strong> min</p>
+			</div>
+		</div>
+		<div class="acciones">
+			<div class="votos">
+				<a class="up" href="#"></a>
+				<span class="total pull-left">156</span>
+				<a class="down" href="#"></a>
+			</div>
+			<div class="datos">
+				<a class="comentarios pull-right btn btn-primary" href="#">
+					10
+				</a>
+				<a class="estrella" href="#">
+					*
+				</a>
+			</div>
+		</div>
+	</article>
+</div>
+<div class="col-sm-6">
+	<article class="post">
+		<div class="descripcion row">
+			<figure class="imagen col-xs-3">
+				
+			</figure>
+			<div class="detalles col-xs-9">
+				<h2 class="titulo">
+					Buenas prácticas para el uso de Git y GitHub
+				</h2>
+				<p class="autor">
+					por <a href="#">Alfredo López</a>
+				</p>
+				<a class="tag btn btn-default" href="#">CSS3</a>
+				<p class="fecha pull-right">hace <strong>20</strong> min</p>
+			</div>
+		</div>
+		<div class="acciones">
+			<div class="votos">
+				<a class="up" href="#"></a>
+				<span class="total pull-left">156</span>
+				<a class="down" href="#"></a>
+			</div>
+			<div class="datos">
+				<a class="comentarios pull-right btn btn-primary" href="#">
+					10
+				</a>
+				<a class="estrella" href="#">
+					*
+				</a>
+			</div>
+		</div>
+	</article>
+</div>
+<div class="col-sm-6">
+	<article class="post">
+		<div class="descripcion row">
+			<figure class="imagen col-xs-3">
+				
+			</figure>
+			<div class="detalles col-xs-9">
+				<h2 class="titulo">
+					Buenas prácticas para el uso de Git y GitHub
+				</h2>
+				<p class="autor">
+					por <a href="#">Alfredo López</a>
+				</p>
+				<a class="tag btn btn-default" href="#">CSS3</a>
+				<p class="fecha pull-right">hace <strong>20</strong> min</p>
+			</div>
+		</div>
+		<div class="acciones">
+			<div class="votos">
+				<a class="up" href="#"></a>
+				<span class="total pull-left">156</span>
+				<a class="down" href="#"></a>
+			</div>
+			<div class="datos">
+				<a class="comentarios pull-right btn btn-primary" href="#">
+					10
+				</a>
+				<a class="estrella" href="#">
+					*
+				</a>
+			</div>
+		</div>
+	</article>
+</div>
+<div class="col-sm-6">
+	<article class="post">
+		<div class="descripcion row">
+			<figure class="imagen col-xs-3">
+				
+			</figure>
+			<div class="detalles col-xs-9">
+				<h2 class="titulo">
+					Buenas prácticas para el uso de Git y GitHub
+				</h2>
+				<p class="autor">
+					por <a href="#">Alfredo López</a>
+				</p>
+				<a class="tag btn btn-default" href="#">CSS3</a>
+				<p class="fecha pull-right">hace <strong>20</strong> min</p>
+			</div>
+		</div>
+		<div class="acciones">
+			<div class="votos">
+				<a class="up" href="#"></a>
+				<span class="total pull-left">156</span>
+				<a class="down" href="#"></a>
+			</div>
+			<div class="datos">
+				<a class="comentarios pull-right btn btn-primary" href="#">
+					10
+				</a>
+				<a class="estrella" href="#">
+					*
+				</a>
+			</div>
+		</div>
+	</article>
+</div>
+<div class="col-sm-6">
+	<article class="post">
+		<div class="descripcion row">
+			<figure class="imagen col-xs-3">
+				
+			</figure>
+			<div class="detalles col-xs-9">
+				<h2 class="titulo">
+					Buenas prácticas para el uso de Git y GitHub
+				</h2>
+				<p class="autor">
+					por <a href="#">Alfredo López</a>
+				</p>
+				<a class="tag btn btn-default" href="#">CSS3</a>
+				<p class="fecha pull-right">hace <strong>20</strong> min</p>
+			</div>
+		</div>
+		<div class="acciones">
+			<div class="votos">
+				<a class="up" href="#"></a>
+				<span class="total pull-left">156</span>
+				<a class="down" href="#"></a>
+			</div>
+			<div class="datos">
+				<a class="comentarios pull-right btn btn-primary" href="#">
+					10
+				</a>
+				<a class="estrella" href="#">
+					*
+				</a>
+			</div>
+		</div>
+	</article>
+</div>	
+</section>
+<footer class="text-center">
+	<!-- CSS orientada a objetos, en vez de usar "id", usamos "clases" para tratar cada elemento como una objeto y cada clase sean sus propiedades, los "id" los reservamos paramodificar el objeto por javascript -->
+	<h3>
+		<strong>Powered by Alfredoll - Bootstrap </strong>
+		<span class="creado">
+			2016
+		</span>
+	</h3>
+</footer>
+
+	<script>
+
+		var a = 1; /* asignar un valor a una variable*/
+		var texto = "hola soy un texto"; /*texto con comillas simples o dobles*/
+		var c = a;
+		var c = a + 10;
+		var c = a / 10; /* división*/
+		var c = a > 10; /*devolvería un falso*/
+
+		/*console.log(c);*/ /*proporcionamos información a la consola del navegador*/
+		/* i = i + 1 equivale a i++*/
+		for (var i = 0; i < 10; i++){ 
+			console.log(i);
+		}
+
+		var x = 3;
+		var b = x + 3;
+
+		if (b < 12) { /* == es el operador igual , === es decir b es exactamente igual a 12*/
+			console.log("b es menor que 12");
+		}else{
+			console.log("no es menor que 12")
+		}
+		/* usando else if*/
+		if (b == 6) {
+			console.log("b es 6");
+		}else if (b==7) {
+			console.log("es 7");
+		}else if (b==8){
+			console.log("b es 8");
+		}
+		/* para evitar el siguiente caso con else if repetitivo usamos el switch*/
+		t = 8;
+		switch(t){
+			case 6 : console.log('t es 6'); break;
+			case 7 : console.log('t es 7'); break;
+			default : console.log('ninguno'); break;
+		}
+
+		/* funciones*/
+		function hacerAlgo() {
+			console.log('estoy haciendo algo');
+
+		}
+		hacerAlgo(); /*no se ejecuta la función de arriba hasta que no la llame*/
+
+		/* las funciones también pueden retornar valores*/
+		function log(texto) {
+			console.log(texto);
+			return texto;
+		}
+		/* y ese valor que se retorna puedo guardarlo en una variable*/
+		log("hola, soy un texto"); /*puedo pasarle cualquier valor, o un tipo window*/
+		log(window); 
+
+		/* Arrays o vectores*/
+		var tiempos = [] /*definimos un array*/
+		var mastiempos = ["10",15,[20,25],30,12]; /* se pueden añadir cualquier tipo dentro de un array, incluso otro array*/
+		tiempos.push(10);
+		tiempos.push(15);
+		tiempos.push(10.5);
+		log(tiempos);
+		log(mastiempos);
+
+		/* otra manera de definir un array y mostrar una posición en concreto*/
+		var persona = ["Pablo", "García", 25, "España"];
+
+		log(persona[2]);
+
+		/* Estructura Objeto, todo es un objeto dentro de javascript  */
+		var person = {}
+		var person2 = {}
+		person.nombre = "rodrigo";
+		person.edad = 15;
+		person.nacionalidad = "española";
+		person.otro = {
+			nombre: "francia",
+			codigo: "fr",
+			numero: 20,
+		};
+
+		person2.nombre = "javier";
+		person2.edad = 40;
+		person2.nacionalidad = "italiano";
+
+		log(person);
+		log(person2);
+
+	</script>
+</body>
+</html>
